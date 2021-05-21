@@ -35,6 +35,12 @@ namespace Custom_Discord_RPC {
             this.LargeImage = new System.Windows.Forms.Label();
             this.LargeImageTextBox = new System.Windows.Forms.TextBox();
             this.SetState = new System.Windows.Forms.Button();
+            this.LargeImageText = new System.Windows.Forms.Label();
+            this.LargeImageTextTextBox = new System.Windows.Forms.TextBox();
+            this.SmallImage = new System.Windows.Forms.Label();
+            this.SmallImageTextBox = new System.Windows.Forms.TextBox();
+            this.SmallImageText = new System.Windows.Forms.Label();
+            this.SmallImageTextTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +53,7 @@ namespace Custom_Discord_RPC {
             // FirstLine
             // 
             this.FirstLine.AutoSize = true;
-            this.FirstLine.Location = new System.Drawing.Point(12, 47);
+            this.FirstLine.Location = new System.Drawing.Point(12, 36);
             this.FirstLine.Name = "FirstLine";
             this.FirstLine.Size = new System.Drawing.Size(49, 13);
             this.FirstLine.TabIndex = 1;
@@ -56,7 +62,7 @@ namespace Custom_Discord_RPC {
             // SecondLine
             // 
             this.SecondLine.AutoSize = true;
-            this.SecondLine.Location = new System.Drawing.Point(12, 85);
+            this.SecondLine.Location = new System.Drawing.Point(12, 65);
             this.SecondLine.Name = "SecondLine";
             this.SecondLine.Size = new System.Drawing.Size(67, 13);
             this.SecondLine.TabIndex = 2;
@@ -64,21 +70,21 @@ namespace Custom_Discord_RPC {
             // 
             // FirstLineTextBox
             // 
-            this.FirstLineTextBox.Location = new System.Drawing.Point(91, 40);
+            this.FirstLineTextBox.Location = new System.Drawing.Point(109, 33);
             this.FirstLineTextBox.Name = "FirstLineTextBox";
             this.FirstLineTextBox.Size = new System.Drawing.Size(100, 20);
             this.FirstLineTextBox.TabIndex = 3;
             // 
             // SecondLineTextBox
             // 
-            this.SecondLineTextBox.Location = new System.Drawing.Point(91, 78);
+            this.SecondLineTextBox.Location = new System.Drawing.Point(109, 62);
             this.SecondLineTextBox.Name = "SecondLineTextBox";
             this.SecondLineTextBox.Size = new System.Drawing.Size(100, 20);
             this.SecondLineTextBox.TabIndex = 4;
             // 
             // ApplicationIDTextBox
             // 
-            this.ApplicationIDTextBox.Location = new System.Drawing.Point(91, 3);
+            this.ApplicationIDTextBox.Location = new System.Drawing.Point(109, 7);
             this.ApplicationIDTextBox.Name = "ApplicationIDTextBox";
             this.ApplicationIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.ApplicationIDTextBox.TabIndex = 6;
@@ -94,7 +100,7 @@ namespace Custom_Discord_RPC {
             // 
             // SetAppID
             // 
-            this.SetAppID.Location = new System.Drawing.Point(207, 1);
+            this.SetAppID.Location = new System.Drawing.Point(225, 5);
             this.SetAppID.Name = "SetAppID";
             this.SetAppID.Size = new System.Drawing.Size(95, 23);
             this.SetAppID.TabIndex = 13;
@@ -104,7 +110,7 @@ namespace Custom_Discord_RPC {
             // LargeImage
             // 
             this.LargeImage.AutoSize = true;
-            this.LargeImage.Location = new System.Drawing.Point(12, 115);
+            this.LargeImage.Location = new System.Drawing.Point(12, 92);
             this.LargeImage.Name = "LargeImage";
             this.LargeImage.Size = new System.Drawing.Size(66, 13);
             this.LargeImage.TabIndex = 10;
@@ -112,14 +118,14 @@ namespace Custom_Discord_RPC {
             // 
             // LargeImageTextBox
             // 
-            this.LargeImageTextBox.Location = new System.Drawing.Point(91, 115);
+            this.LargeImageTextBox.Location = new System.Drawing.Point(109, 89);
             this.LargeImageTextBox.Name = "LargeImageTextBox";
             this.LargeImageTextBox.Size = new System.Drawing.Size(100, 20);
             this.LargeImageTextBox.TabIndex = 11;
             // 
             // SetState
             // 
-            this.SetState.Location = new System.Drawing.Point(207, 110);
+            this.SetState.Location = new System.Drawing.Point(225, 162);
             this.SetState.Name = "SetState";
             this.SetState.Size = new System.Drawing.Size(95, 23);
             this.SetState.TabIndex = 12;
@@ -127,11 +133,65 @@ namespace Custom_Discord_RPC {
             this.SetState.UseVisualStyleBackColor = true;
             this.SetState.Click += new System.EventHandler(this.SetState_Click);
             // 
+            // LargeImageText
+            // 
+            this.LargeImageText.AutoSize = true;
+            this.LargeImageText.Location = new System.Drawing.Point(12, 118);
+            this.LargeImageText.Name = "LargeImageText";
+            this.LargeImageText.Size = new System.Drawing.Size(90, 13);
+            this.LargeImageText.TabIndex = 14;
+            this.LargeImageText.Text = "Large Image Text";
+            // 
+            // LargeImageTextTextBox
+            // 
+            this.LargeImageTextTextBox.Location = new System.Drawing.Point(109, 115);
+            this.LargeImageTextTextBox.Name = "LargeImageTextTextBox";
+            this.LargeImageTextTextBox.Size = new System.Drawing.Size(100, 20);
+            this.LargeImageTextTextBox.TabIndex = 15;
+            // 
+            // SmallImage
+            // 
+            this.SmallImage.AutoSize = true;
+            this.SmallImage.Location = new System.Drawing.Point(12, 143);
+            this.SmallImage.Name = "SmallImage";
+            this.SmallImage.Size = new System.Drawing.Size(64, 13);
+            this.SmallImage.TabIndex = 16;
+            this.SmallImage.Text = "Small Image";
+            // 
+            // SmallImageTextBox
+            // 
+            this.SmallImageTextBox.Location = new System.Drawing.Point(109, 140);
+            this.SmallImageTextBox.Name = "SmallImageTextBox";
+            this.SmallImageTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SmallImageTextBox.TabIndex = 17;
+            // 
+            // SmallImageText
+            // 
+            this.SmallImageText.AutoSize = true;
+            this.SmallImageText.Location = new System.Drawing.Point(12, 168);
+            this.SmallImageText.Name = "SmallImageText";
+            this.SmallImageText.Size = new System.Drawing.Size(88, 13);
+            this.SmallImageText.TabIndex = 18;
+            this.SmallImageText.Text = "Small Image Text";
+            // 
+            // SmallImageTextTextBox
+            // 
+            this.SmallImageTextTextBox.Location = new System.Drawing.Point(109, 165);
+            this.SmallImageTextTextBox.Name = "SmallImageTextTextBox";
+            this.SmallImageTextTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SmallImageTextTextBox.TabIndex = 19;
+            // 
             // DiscordRPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 155);
+            this.ClientSize = new System.Drawing.Size(333, 191);
+            this.Controls.Add(this.SmallImageTextTextBox);
+            this.Controls.Add(this.SmallImageText);
+            this.Controls.Add(this.SmallImageTextBox);
+            this.Controls.Add(this.SmallImage);
+            this.Controls.Add(this.LargeImageTextTextBox);
+            this.Controls.Add(this.LargeImageText);
             this.Controls.Add(this.SetState);
             this.Controls.Add(this.LargeImageTextBox);
             this.Controls.Add(this.LargeImage);
@@ -164,6 +224,12 @@ namespace Custom_Discord_RPC {
         private System.Windows.Forms.Label LargeImage;
         private System.Windows.Forms.TextBox LargeImageTextBox;
         private System.Windows.Forms.Button SetState;
+        private System.Windows.Forms.Label LargeImageText;
+        private System.Windows.Forms.TextBox LargeImageTextTextBox;
+        private System.Windows.Forms.Label SmallImage;
+        private System.Windows.Forms.TextBox SmallImageTextBox;
+        private System.Windows.Forms.Label SmallImageText;
+        private System.Windows.Forms.TextBox SmallImageTextTextBox;
     }
 }
 

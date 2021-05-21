@@ -15,17 +15,17 @@ namespace Custom_Discord_RPC {
             client.Initialize();
         }
         private void SetState_Click(object sender, EventArgs e) {
-            if (LargeImageTextBox.Text != null && FirstLineTextBox.Text != null && SecondLineTextBox.Text != null) {
-                client.SetPresence(new RichPresence() {
-                    Details = FirstLineTextBox.Text,
-                    State = SecondLineTextBox.Text,
-                    Assets = new Assets() {
+            client.SetPresence(new RichPresence() {
+                Details = FirstLineTextBox.Text,
+                State = SecondLineTextBox.Text,
+                Assets = new Assets() {
                     LargeImageKey = LargeImageTextBox.Text,
-                    //LargeImageText = "Lachee's Discord IPC Library",
-                    //SmallImageKey = "large"
-                    }
-                });
-            }
+                    LargeImageText = LargeImageTextTextBox.Text,
+                    SmallImageKey = SmallImageTextBox.Text,
+                    SmallImageText = SmallImageTextTextBox.Text
+                    
+                }
+            });
         }
     }
 }
