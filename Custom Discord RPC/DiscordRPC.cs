@@ -11,7 +11,6 @@ namespace Custom_Discord_RPC {
 
         private void SetAppID_Click(object sender, EventArgs e) {
             client = new DiscordRpcClient(ApplicationIDTextBox.Text);
-            //773374140321103882
             client.Initialize();
         }
         private void SetState_Click(object sender, EventArgs e) {
